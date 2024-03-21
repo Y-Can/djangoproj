@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultats du Scraping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #f3f3f3;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Résultats du Scraping</h1>
+    {% if scraped_data %}
+        <ul>
+            {% for data in scraped_data %}
+            
+                <li>{{ data }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Aucune donnée trouvée.</p>
+    {% endif %}
+</body>
+</html>
