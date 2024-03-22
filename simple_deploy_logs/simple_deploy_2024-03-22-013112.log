@@ -1,0 +1,53 @@
+2024-03-22 01:31:12,788 INFO: 
+2024-03-22 01:31:12,788 INFO: Logging run of `manage.py simple_deploy`...
+2024-03-22 01:31:12,788 INFO: Created C:\Users\Can\Desktop\djangoproj\simple_deploy_logs.
+2024-03-22 01:31:12,788 INFO: 
+2024-03-22 01:31:12,788 INFO: CLI args: {'verbosity': 1, 'settings': None, 'pythonpath': None, 'traceback': False, 'no_color': False, 'force_color': False, 'platform': 'fly_io', 'automate_all': False, 'no_logging': False, 'ignore_unclean_git': False, 'deployed_project_name': '', 'region': 'us-3.platform.sh', 'unit_testing': False, 'integration_testing': False}
+2024-03-22 01:31:12,789 INFO:   Deployment target: fly_io
+2024-03-22 01:31:12,916 INFO: 
+2024-03-22 01:31:12,916 INFO: ***** Support for Fly.io is in the preliminary phase ***
+2024-03-22 01:31:12,917 INFO: 
+2024-03-22 01:31:12,917 INFO: - Support for deploying to Fly.io is in the preliminary phase at this point.
+2024-03-22 01:31:12,917 INFO: - You should only be using this project to deploy to Fly.io at this point if
+2024-03-22 01:31:12,917 INFO:   you are interested in helping to develop or test the simple_deploy project.
+2024-03-22 01:31:12,917 INFO: - You should look at the deploy_flyio.py script before running this command,
+2024-03-22 01:31:12,917 INFO:   so you know what kinds of changes will be made to your project.
+2024-03-22 01:31:12,917 INFO: - You should understand the Fly.io console, and be comfortable deleting resources
+2024-03-22 01:31:12,917 INFO:   that are created during this deployment.
+2024-03-22 01:31:12,917 INFO: - You may want to cancel this run and deploy to a different platform.
+2024-03-22 01:31:12,917 INFO: 
+2024-03-22 01:31:12,917 INFO: Are you sure you want to do this? (yes|no) 
+2024-03-22 01:31:14,971 INFO: yes
+2024-03-22 01:31:14,971 INFO:   Continuing with Fly.io deployment...
+2024-03-22 01:31:14,971 INFO:   Local platform identified: Windows
+2024-03-22 01:31:14,971 INFO:   Project name: djangoproj
+2024-03-22 01:31:14,971 INFO:   Project root: C:\Users\Can\Desktop\djangoproj
+2024-03-22 01:31:14,972 INFO:   Found .git dir at C:\Users\Can\Desktop\djangoproj.
+2024-03-22 01:31:15,016 INFO: 
+2024-03-22 01:31:15,017 INFO: git status:
+2024-03-22 01:31:15,017 INFO: On branch main
+2024-03-22 01:31:15,017 INFO: Your branch is ahead of 'origin/main' by 1 commit.
+2024-03-22 01:31:15,017 INFO:   (use "git push" to publish your local commits)
+2024-03-22 01:31:15,017 INFO: 
+2024-03-22 01:31:15,017 INFO: Changes not staged for commit:
+2024-03-22 01:31:15,017 INFO:   (use "git add <file>..." to update what will be committed)
+2024-03-22 01:31:15,017 INFO:   (use "git restore <file>..." to discard changes in working directory)
+2024-03-22 01:31:15,017 INFO: 	modified:   djangoproj/__pycache__/settings.cpython-312.pyc
+2024-03-22 01:31:15,017 INFO: 
+2024-03-22 01:31:15,017 INFO: Untracked files:
+2024-03-22 01:31:15,017 INFO:   (use "git add <file>..." to include in what will be committed)
+2024-03-22 01:31:15,017 INFO: 	simple_deploy_logs/
+2024-03-22 01:31:15,017 INFO: 
+2024-03-22 01:31:15,017 INFO: no changes added to commit (use "git add" and/or "git commit -a")
+2024-03-22 01:31:15,056 INFO: 
+2024-03-22 01:31:15,056 INFO: SimpleDeployCommandError:
+2024-03-22 01:31:15,056 INFO: 
+2024-03-22 01:31:15,056 INFO: The output of `git status` indicates that you have uncommitted changes.
+2024-03-22 01:31:15,056 INFO: 
+2024-03-22 01:31:15,056 INFO: We highly recommend you commit all changes before running simple_deploy, so
+2024-03-22 01:31:15,056 INFO: you can easily undo configuration changes if deployment doesn't work, or if you
+2024-03-22 01:31:15,056 INFO: wish to deploy to a different platform.
+2024-03-22 01:31:15,056 INFO: 
+2024-03-22 01:31:15,056 INFO: Please commit all changes and then run simple_deploy again. If you really wish
+2024-03-22 01:31:15,056 INFO: to continue without committing current changes, you can use
+2024-03-22 01:31:15,056 INFO: the --ignore-unclean-git flag.
